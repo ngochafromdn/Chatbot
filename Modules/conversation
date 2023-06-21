@@ -1,0 +1,5 @@
+class Conversation:
+    def conversational_chat(self, query):
+        result = self.chain({"question": query, "chat_history": self.history})
+        self.history.append((query, result["answer"]))
+        return result["answer"]
