@@ -9,8 +9,7 @@ from Modules.prompt import prompt
 import os
 
 
-user_api_key = st.sidebar.text_input('API key',label="#### Enter your OPEN AI API here 👇"
-    type="password")
+user_api_key = st.sidebar.text_input('API key',label="#### Enter your OPEN AI API here 👇",placeholder="Enter your OPEN AI API here ")
 input_link = st.sidebar.text_input(
     label="#### Your input link 👇",
     placeholder="Paste your input link")
